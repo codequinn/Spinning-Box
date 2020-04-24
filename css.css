@@ -1,0 +1,27 @@
+/*body code*/
+* {
+  box-sizing: border-box;
+}
+html, body {
+  align-items: center;
+  background-color: rebeccapurple;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+/*the shapes code*/
+div{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation-name: spin;
+    animation-duration: 2s;
+}
+@keyframes spin{
+  to{
+    transform: rotate(360deg);
+  }
+}
+
+  
