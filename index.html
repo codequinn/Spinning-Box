@@ -7,8 +7,27 @@
     <title>CSS SHAPES</title>
 </head>
 <body>
-    
-    <div></div>
+   <div class='clapper' style="align-items: start;">
+        <div></div>
+        <div></div>
+</div>
 
+<div>
+    <div></div>
+</div>
+<br>
+<h1>Span 0 times!</h1>
+
+</body>
+<script>
+const spinner = document.querySelector('div')
+const label = document.querySelector('h1')
+let span = 0
+const update = () => {
+  span++
+  label.innerText = `Span ${span} times!`
+}
+spinner.addEventListener('animationiteration', update)
+</script>
 </body>
 </html>
